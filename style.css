@@ -26,10 +26,10 @@ html::before,
 
 /* Assign images + staggered delays */
 html::before { background-image: url("img/purple5.png"); animation-delay: 0s; }
-.bg2        { background-image: url("img/purple5.png"); animation-delay: 5s; }
-.bg3        { background-image: url("img/purple5.png"); animation-delay: 10s; }
-.bg4        { background-image: url("img/purple5.png"); animation-delay: 15s; }
-.bg5        { background-image: url("img/purple5.png"); animation-delay: 20s; }
+.bg2        { background-image: url("img/blue2.png"); animation-delay: 5s; }
+.bg3        { background-image: url("img/green7.png"); animation-delay: 10s; }
+.bg4        { background-image: url("img/purple7.png"); animation-delay: 15s; }
+.bg5        { background-image: url("img/blue6.png"); animation-delay: 20s; }
 
 /* Fade animation */
 @keyframes fade {
@@ -96,11 +96,10 @@ p {
 }
 
 .textbox {
-  background: #222;
+  background: black;
   color: white;
   padding: 20px;
-  border: 2px solid magenta;
-  border-radius: 12px;
+  border: 4px white;
   position: relative;
   z-index: 10;          /* above overlays */
 }
