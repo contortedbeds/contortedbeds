@@ -42,8 +42,6 @@ p {
     src: url('punk.ttf');
 }
 .textbox {
-  width: 250px;
-  height: 150px;
   background: #222;
   color: white;
   padding: 20px;
