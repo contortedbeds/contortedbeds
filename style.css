@@ -2,6 +2,7 @@ html::before {
   content: "";
   position: fixed;
   inset: 0;
+  z-index: -1
 
   background: url("img/purple5.png");
   background-size: 1000px 1000px;
@@ -48,4 +49,10 @@ p {
   border: 2px solid magenta;
   position: relative;
   z-index: 10;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
