@@ -1,20 +1,61 @@
-html {
+/* ------------------------------ */
+/*  GLOBAL + RESET                */
+/* ------------------------------ */
+html, body {
+  height: 100%;
+  margin: 0;
   position: relative;
 }
-html::before {
+
+/* ------------------------------ */
+/*  5‑IMAGE CROSSFADE SLIDESHOW   */
+/* ------------------------------ */
+
+html::before,
+.bg2, .bg3, .bg4, .bg5 {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: url("img/purple5.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -3;          /* very back */
+  animation: fade 25s infinite;
+  opacity: 0;
+}
+
+/* Assign images + staggered delays */
+html::before { background-image: url("img/bg1.png"); animation-delay: 0s; }
+.bg2        { background-image: url("img/bg2.png"); animation-delay: 5s; }
+.bg3        { background-image: url("img/bg3.png"); animation-delay: 10s; }
+.bg4        { background-image: url("img/bg4.png"); animation-delay: 15s; }
+.bg5        { background-image: url("img/bg5.png"); animation-delay: 20s; }
+
+/* Fade animation */
+@keyframes fade {
+  0%   { opacity: 0; }
+  8%   { opacity: 1; }
+  20%  { opacity: 1; }
+  28%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* ------------------------------ */
+/*  HUE‑ROTATE RAINBOW OVERLAY    */
+/* ------------------------------ */
+
+html::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;          /* above slideshow, below content */
+
+  background: url("img/purple5.png");
   background-size: 1000px 1000px;
   background-repeat: repeat;
 
-  filter: hue-rotate(0deg);
   mix-blend-mode: color;
-  opacity: 1;
-
   animation: hueSpin 30s linear infinite;
-  z-index: -1;
 }
 
 @keyframes hueSpin {
@@ -22,27 +63,31 @@ html::before {
   100% { filter: hue-rotate(360deg); }
 }
 
-h1 {
-  color: white;
-  font-family: "punk";
-  text-align: center;
+/* ------------------------------ */
+/*  TEXT + FONTS                  */
+/* ------------------------------ */
+
+@font-face {
+  font-family: 'punk';
+  src: url('punk.ttf');
 }
 
-h2 {
+h1, h2, p {
   color: white;
-  font-family: "punk";
-  text-align: left;
 }
 
+h1, h2 {
+  font-family: "punk";
+}
 
 p {
-  color: white;
   font-family: "Verdana", sans-serif;
 }
-@font-face {
-    font-family: 'punk'; 
-    src: url('punk.ttf');
-}
+
+/* ------------------------------ */
+/*  TEXT BOXES + LAYOUT           */
+/* ------------------------------ */
+
 .container {
   display: flex;
   flex-direction: column;
@@ -57,5 +102,5 @@ p {
   border: 2px solid magenta;
   border-radius: 12px;
   position: relative;
-  z-index: 10;
+  z-index: 10;          /* above overlays */
 }
