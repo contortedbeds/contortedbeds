@@ -20,10 +20,18 @@ html::before {
 }
 
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
   color: white;
   font-family: "punk";
+  text-align: center;
 }
+
+h2 {
+  color: white;
+  font-family: "punk";
+  text-align: left;
+}
+
 
 p {
   color: white;
@@ -32,3 +40,11 @@ p {
 @font-face {
     font-family: 'punk'; 
     src: url('punk.ttf');
+}
+.box {
+  width: 200px;
+  height: 200px;
+  background: black;
+  border: 3px solid white;
+  border-radius: 10px; /* optional */
+}
