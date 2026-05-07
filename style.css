@@ -25,11 +25,11 @@ html::before,
 }
 
 /* Assign images + staggered delays */
-html::before { background-image: url("img/bg1.png"); animation-delay: 0s; }
-.bg2        { background-image: url("img/bg2.png"); animation-delay: 5s; }
-.bg3        { background-image: url("img/bg3.png"); animation-delay: 10s; }
-.bg4        { background-image: url("img/bg4.png"); animation-delay: 15s; }
-.bg5        { background-image: url("img/bg5.png"); animation-delay: 20s; }
+html::before { background-image: url("img/purple5.png"); animation-delay: 0s; }
+.bg2        { background-image: url("img/purple5.png"); animation-delay: 5s; }
+.bg3        { background-image: url("img/purple5.png"); animation-delay: 10s; }
+.bg4        { background-image: url("img/purple5.png"); animation-delay: 15s; }
+.bg5        { background-image: url("img/purple5.png"); animation-delay: 20s; }
 
 /* Fade animation */
 @keyframes fade {
