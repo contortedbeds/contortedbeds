@@ -102,4 +102,6 @@ p {
   border: 4px white;
   position: relative;
   z-index: 10;          /* above overlays */
+  min-width: 128;
+  min-height: 128;
 }
