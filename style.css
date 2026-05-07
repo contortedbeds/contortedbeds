@@ -47,5 +47,5 @@ p {
   border: 3px solid white;
   border-radius: 10px; /* optional */
   box-shadow: 0 0 25px #6f00ff;
-  align-self: center;
+  text-align: center;
 }
