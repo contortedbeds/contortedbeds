@@ -1,0 +1,34 @@
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background: url("img/purple5.png");
+  background-size: 1000px 1000px;
+  background-repeat: repeat;
+
+  filter: hue-rotate(0deg);
+  mix-blend-mode: color;
+  opacity: 1;
+
+  animation: hueSpin 30s linear infinite;
+}
+
+@keyframes hueSpin {
+  0%   { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+  font-family: "punk";
+}
+
+p {
+  color: white;
+  font-family: "Verdana", sans-serif;
+}
+@font-face {
+    font-family: 'punk'; 
+    src: url('punk.ttf');
