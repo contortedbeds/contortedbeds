@@ -23,7 +23,6 @@ html::before {
   100% { filter: hue-rotate(360deg); }
 }
 
-
 h1 {
   color: white;
   font-family: "punk";
