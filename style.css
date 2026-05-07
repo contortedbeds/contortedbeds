@@ -48,4 +48,6 @@ p {
   color: white;
   padding: 20px;
   border: 2px solid magenta;
+  position: relative;
+  z-index: 10;
 }
