@@ -41,11 +41,11 @@ p {
     font-family: 'punk'; 
     src: url('punk.ttf');
 }
-.box {
-  width: 200px;
-  background: black;
+.textbox {
+  width: 250px;
+  height: 150px;
+  background: #222;
+  color: white;
   padding: 20px;
-  border: 10px solid white;
-  box-shadow: 0 0 25px #6f00ff;
-  margin: 0 auto;
+  border: 2px solid magenta;
 }
