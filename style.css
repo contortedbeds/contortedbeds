@@ -105,3 +105,9 @@ p {
   min-width: 128;
   min-height: 128;
 }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+  animation: hueSpin 10s linear infinite;
+}
